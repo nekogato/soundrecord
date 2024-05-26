@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ratchet-websocket
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: "php server.php"
+    envVars:
+      - key: PORT
+        value: "8080"
